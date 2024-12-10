@@ -55,9 +55,15 @@ Before you begin, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-4. **Configure Your API Key**
+4. **Set Up the Application File**
+   ```bash
+   # Copy the template file to create your local app file
+   cp app_template.py app.py
+   ```
+
+5. **Configure Your API Key**
    
-   Open `app.py` and replace the API key with your own:
+   Open `app.py` and replace the API key placeholder with your own:
    ```python
    API_KEY = "your-nvidia-api-key-here"
    ```
@@ -118,6 +124,7 @@ Before you begin, ensure you have the following installed:
 ```
 nv-chat/
 ├── app.py              # Main Flask application
+├── app_template.py     # Template for the application file
 ├── requirements.txt    # Python dependencies
 ├── static/
 │   └── script.js      # Frontend JavaScript
